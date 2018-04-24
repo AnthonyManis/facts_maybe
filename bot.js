@@ -92,7 +92,6 @@ function parseUnsourcedSentences(content) {
     var pattern_cn_span = /{{([Cc]([Nn]|itation) span\s*\|\s*)([^\.\n]*?\.)(\s*\|[=\w\s\d]+)?}}/;
     var re_three = new RegExp(pattern_cn_span.source, 'g');
     while ((match = re_three.exec(content)) !== null) {
-        //console.log('re_three found a match');
         if (checkTweetLength(match[3])) sentences.push(match[3]); // Only the 3rd group is wanted.
     }
 
@@ -114,15 +113,19 @@ function tweetASentence() {
                 // If we failed to get any sentences from the selected article, try again.
                 if ( length == 0 ) {
                     // Wait a few minutes before trying again.
-                    setTimeout(tweetASentence, 1000 * 60 * 3);
+                    console.log('No sentence found, waiting a minute.');
+                    setTimeout(tweetASentence, 1000 * 60 * 1);
                 } else {
                     // (5) Format a match
                     var tweet_text = formatSentence(sentences[Math.floor(Math.random() * sentences.length)]);
-                    console.log(tweet_text);
+                    var time_now = new Date();
+                    console.log(time_now.toTimeString() + ' ' + tweet_text);
                     // (6) Tweet the sentence.
+                    /*
 	                T.post('statuses/update', { status: tweet_text }, function (tweet_error, data) {
                         if (tweet_error) console.log(tweet_error);
                     });
+                    */
                 }
             }
         } );
@@ -134,5 +137,5 @@ function tweetASentence() {
 tweetASentence();
 // ...and then every hour after that. Time here is in milliseconds, so
 // 1000 ms = 1 second, 1 sec * 60 = 1 min, 1 min * 60 = 1 hour --> 1000 * 60 * 60
-setInterval(tweetASentence, 1000 * 60 * 53);
+setInterval(tweetASentence, 1000 * 60 * 50);
 
