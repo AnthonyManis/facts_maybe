@@ -121,11 +121,9 @@ function tweetASentence() {
                     var time_now = new Date();
                     console.log(time_now.toTimeString() + ' ' + tweet_text);
                     // (6) Tweet the sentence.
-                    /*
 	                T.post('statuses/update', { status: tweet_text }, function (tweet_error, data) {
                         if (tweet_error) console.log(tweet_error);
                     });
-                    */
                 }
             }
         } );
