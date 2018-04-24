@@ -1,0 +1,138 @@
+// Twitter library
+var Twit = require('twit');
+
+// We need to include our configuration file
+var T = new Twit(require('./config.js'));
+
+// MediaWiki library
+const Mw = require('nodemw'),
+	client = new Mw({
+		server: 'en.wikipedia.org',
+		path: '/w'
+	});
+
+function getRandomUnsourcedPage(callback) {
+    // Note that 'All_articles_with_unsourced_statements' category never gets a callback in a reasonable amount of time, so we have to do it using this category.
+    client.getPagesInCategory('Articles_with_unsourced_statements', function (get_subcats_error, subcats) {
+        if (get_subcats_error) {
+            console.log(get_subcats_error);
+        } else {
+            subcats = subcats.filter(el => el.title.startsWith('Category:Articles'));
+   		    var selected_subcat = subcats[Math.floor(Math.random() * subcats.length)];
+    
+            // Get pages from this subcat
+            client.getPagesInCategory(selected_subcat.title.replace('Category:', ''), function (get_pages_error, pages) {
+                if (get_pages_error) {
+                    console.log(get_pages_error); 
+                } else {
+                    selected_page = pages[Math.floor(Math.random() * pages.length)];
+                    callback(selected_page);
+                }
+            });
+        }
+    });
+}
+
+function sanitize(content) {
+    /// Replace strings in content to avoid common areas we don't want to quote from.
+    // Multi-line replacements
+    content = content.replace(/^{{infobox[\s\S]+?^}}/gim, '');      // infobox
+    content = content.replace(/^{\|[\s\S]+?^\|}/gim, '');           // wikitable
+    content = content.replace(/\[\[([^\]\|]+?)\|(.+?)\]\]/g, '$2'); // [[bad format|good format]]
+    content = content.replace(/(<ref>?)[\s\S]+?(<\/ref>)/gm, '');   // tagged reference
+    content = content.replace(/<!--[\s\S]+?-->/gm, '');             // this weird note tag
+    // Single-line replacements
+    content = content.replace(/''+?/g, '');                         // multiple single quotes
+    content = content.replace(/[\[\]]/g , '');                      // [] braces
+
+    // Also just get rid of anything from refererences til the end of the article.
+    // There can be citation neededs here, but they tend to be boring.
+    content = content.replace(/=+\s*References\s*=+[\s\S]*/gim, '');
+    return content;
+}
+
+function checkTweetLength(string) {
+    var len = string ? string.length : 0;
+    return (len <= 280);
+}
+
+function formatSentence(sentence) {
+    // There could still be some markup left at this point, so let's remove it.
+    sentence = sentence.replace(/{{[\s\S]+?}}/, '');
+    return sentence;
+}
+
+function parseUnsourcedSentences(content) {
+    var sentences = [];
+    var pattern_cn = /{{[Cc]([Nn]|itation [Nn]eeded)(\|[=\w\s\d]+)?}}/;
+
+    // Sentence ending in a period followed by. {{cn}}
+    var pattern_period_before_cn = /([A-Z][^\.\n]+?\.)\s*/;
+    var re_one = new RegExp(pattern_period_before_cn.source +          // full sentence including period
+            pattern_cn.source,                                         // citation needed group
+            'g');
+    var match = [];
+    while ((match = re_one.exec(content)) !== null) {
+        if (checkTweetLength(match[1])) sentences.push(match[1]); // Only want 1st group of expression
+    }
+    // Sentence ending in {{cn}}. The period is at the end in this case.
+    // OR
+    // Sentence with {{cn}} somewhere within it, but also ending in a period.
+    var pattern_period_after_cn_prefix = /([A-Z][^}\.\n]+?)/;
+    var pattern_period_after_cn_suffix = /([^\.\n]*?\.)/;
+    var re_two = new RegExp(pattern_period_after_cn_prefix.source +    // first part of sentence before cn
+            pattern_cn.source +                                        // citation needed group
+            pattern_period_after_cn_suffix.source,                     // second part of sentence including period.
+            'g');
+    while ((match = re_two.exec(content)) !== null) {
+        if (checkTweetLength(match[1] + match[4])) sentences.push(match[1] + match[4]); // 1st and 4th group of expression
+    }
+
+    // Some citations are a span, wouldn't it be nice if they all were?
+    var pattern_cn_span = /{{([Cc]([Nn]|itation) span\s*\|\s*)([^\.\n]*?\.)(\s*\|[=\w\s\d]+)?}}/;
+    var re_three = new RegExp(pattern_cn_span.source, 'g');
+    while ((match = re_three.exec(content)) !== null) {
+        //console.log('re_three found a match');
+        if (checkTweetLength(match[3])) sentences.push(match[3]); // Only the 3rd group is wanted.
+    }
+
+    return sentences;
+}
+
+function tweetASentence() {
+    // (1) Get an appropriate page.
+    getRandomUnsourcedPage(function (page) {
+        // (2) Get page contents
+        client.getArticle(page.title, function (get_article_error, content){
+            if (get_article_error) {
+                console.log(get_article_error);
+            } else {
+                // (3) Strip the page of unwanted content.
+                content = sanitize(content);
+                var sentences = parseUnsourcedSentences(content);
+                var length = sentences ? sentences.length : 0;
+                // If we failed to get any sentences from the selected article, try again.
+                if ( length == 0 ) {
+                    // Wait a few minutes before trying again.
+                    setTimeout(tweetASentence, 1000 * 60 * 3);
+                } else {
+                    // (5) Format a match
+                    var tweet_text = formatSentence(sentences[Math.floor(Math.random() * sentences.length)]);
+                    console.log(tweet_text);
+                    // (6) Tweet the sentence.
+	                T.post('statuses/update', { status: tweet_text }, function (tweet_error, data) {
+                        if (tweet_error) console.log(tweet_error);
+                    });
+                }
+            }
+        } );
+    });
+
+}
+
+// Try to tweet something as soon as we run the program...
+tweetASentence();
+// ...and then every hour after that. Time here is in milliseconds, so
+// 1000 ms = 1 second, 1 sec * 60 = 1 min, 1 min * 60 = 1 hour --> 1000 * 60 * 60
+setInterval(tweetASentence, 1000 * 60 * 53);
+

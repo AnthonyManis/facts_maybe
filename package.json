@@ -1,0 +1,24 @@
+{
+  "name": "facts_maybe",
+  "version": "1.0.0",
+  "description": "Tweets some facts, maybe.",
+  "main": "bot.js",
+  "dependencies": {
+    "nodemw": "^0.12.0",
+    "twit": "^2.2.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnthonyManis/facts_maybe.git"
+  },
+  "author": "AnthonyManis",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/AnthonyManis/facts_maybe/issues"
+  },
+  "homepage": "https://github.com/AnthonyManis/facts_maybe"
+}
