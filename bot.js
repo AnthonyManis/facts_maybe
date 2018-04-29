@@ -51,9 +51,15 @@ function sanitize(content) {
     return content;
 }
 
+function formatURL(page_id) {
+    var prefix = 'https://en.wikipedia.org/?curid=';
+    return prefix + page_id;
+}
+
 function checkTweetLength(string) {
     var len = string ? string.length : 0;
-    return (len <= 280);
+    // 24 characters reserved for link and a single space.
+    return (len <= 280 - 24);
 }
 
 function formatSentence(sentence) {
@@ -118,6 +124,7 @@ function tweetASentence() {
                 } else {
                     // (5) Format a match
                     var tweet_text = formatSentence(sentences[Math.floor(Math.random() * sentences.length)]);
+                    tweet_text = tweet_text + ' ' + formatURL(page.pageid);
                     var time_now = new Date();
                     console.log(time_now.toTimeString() + ' ' + tweet_text);
                     // (6) Tweet the sentence.
