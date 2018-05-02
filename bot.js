@@ -34,20 +34,27 @@ function getRandomUnsourcedPage(callback) {
 }
 
 function sanitize(content) {
-    /// Replace strings in content to avoid common areas we don't want to quote from.
-    // Multi-line replacements
-    content = content.replace(/^{{infobox[\s\S]+?^}}/gim, '');      // infobox
-    content = content.replace(/^{\|[\s\S]+?^\|}/gim, '');           // wikitable
-    content = content.replace(/\[\[([^\]\|]+?)\|(.+?)\]\]/g, '$2'); // [[bad format|good format]]
-    content = content.replace(/(<ref>?)[\s\S]+?(<\/ref>)/gm, '');   // tagged reference
-    content = content.replace(/<!--[\s\S]+?-->/gm, '');             // this weird note tag
-    // Single-line replacements
-    content = content.replace(/''+?/g, '');                         // multiple single quotes
-    content = content.replace(/[\[\]]/g , '');                      // [] braces
+    // Replace strings in content to avoid common areas we don't want to quote from.
 
+    // Super-destructive multi-line replacements. With m option in combination with [\s\S] you pretty much gobble everything.
+    // These come first because we don't want anything in them.
+    content = content.replace(/^{{infobox[\s\S]+?^}}/gim, '');                  // infobox
+    content = content.replace(/^{\|[\s\S]+?^\|}/gim, '');                       // wikitable
     // Also just get rid of anything from refererences til the end of the article.
-    // There can be citation neededs here, but they tend to be boring.
+    // There can be citation neededs here, but honestly i cba.
     content = content.replace(/=+\s*References\s*=+[\s\S]*/gim, '');
+
+    // Slightly less destructive
+    content = content.replace(/<!--.+?-->/g, '');                               // <!--this weird note tag-->
+    content = content.replace(/(<ref.*?>)((.*?)(<\/ref>))?/gi, '');              // <ref>reference</ref> and also <ref name= />
+    // Next are the ones where we want to preserve some text in match groups.
+    content = content.replace(/\[\[([^\]\|]+?)\|(.+?)\]\]/g, '$2');             // [[bad format|good format]]
+    content = content.replace(/{{convert\|(.+?)\|(.+?)\|.+?}}/gi, '$1$2');      // convert units (have to use original units)
+
+    // Remove some patterns that would look funny if they appeared in the final tweet.
+    content = content.replace(/''+?/g, '');                                     // multiple single quotes
+    content = content.replace(/[\[\]]/g , '');                                  // [] braces
+
     return content;
 }
 

@@ -1,0 +1,602 @@
+
+{{Infobox spacecraft class
+| name                 = Apollo Command/Service Module
+| image                = Apollo CSM lunar orbit.jpg
+| image_size           = 
+| image_alt            =
+| image_caption        = [[Apollo 15]] Command and Service Module in lunar orbit
+ 
+| manufacturer         = [[North American Aviation]]<br>
+                         [[Rockwell International|North American Rockwell]]
+| designer             = [[Maxime Faget]]
+| country              = [[United States]]
+| operator             = [[NASA]]
+| applications         = Manned  [[cislunar|cislunar flight]] and [[lunar orbit]]<br>[[Skylab]] crew shuttle<br>[[Apollo-Soyuz Test Project]]
+
+<!--Specifications-->
+| spacecraft_type      =
+| spacecraft_bus       = 
+| constellation        =
+| design_life          = 14 days
+| launch_mass          = {{convert|32390|lb|kg}} Earth orbit<br>{{convert|63500|lb|kg}} Lunar
+| dry_mass             = {{convert|26300|lb|kg}}
+| payload_capacity     = {{convert|2320|lb|kg}}
+| crew_capacity        = 3
+| dimensions           = {{convert|36.2|ft|m}} high<br>{{convert|12.8|ft|m}} diameter
+| volume               = {{convert|218|cuft|m3}}
+| power                = [[Fuel cell]]s
+| batteries            = 
+| equipment            = 
+| orbits               = [[Low Earth orbit]]<br>[[Cislunar space]]<br>[[Lunar orbit]]
+
+<!--Production-->
+| status               = Retired
+| built                = 35
+| orders               =
+| launched             = 19
+| operational          = 19
+| retired              =
+| failed               = 2
+| lost                 = 1
+| first                = February 26, 1966
+| last                 = July 15, 1975
+| lastretired          = July 24, 1975
+
+<!--Related spacecraft-->
+| derivedfrom          =
+| derivatives          =
+| subsatellites        =
+| subsatellite_of      =
+
+<!--Related spacecraft-->
+| flown_with           = [[Apollo Lunar Module]]
+
+<!--insignia-->
+| insignia             = Apollo program.svg
+| insignia_size        = 
+| insignia_alt         = 
+| insignia_caption     =
+
+<!--image at bottom of infobox-->
+| bottom_image         = Apollo-linedrawing.png
+| bottom_image_size    = <!--300px-->
+| bottom_image_alt     = 
+| bottom_image_caption = Apollo Block II CSM diagram
+
+| previous             = [[Gemini spacecraft]]
+| next                 = [[Orion (spacecraft)]]
+}}
+The '''Command/Service Module''' ('''CSM''') was one of the two [[United States]] [[Apollo (spacecraft)|'''Apollo''' spacecraft]], used for the [[Apollo program]] which landed astronauts on the [[Moon]] between 1969 and 1972. The CSM functioned as a [[mother ship]] which carried three astronauts and the second Apollo spacecraft, the [[Apollo Lunar Module|Lunar Module]], to lunar orbit, and brought the three astronauts back to Earth. The CSM was developed and built for [[NASA]] by [[North American Aviation]] starting in November 1961. It was launched by itself on two [[Sub-orbital spaceflight|suborbital]] and two [[low Earth orbit]] test missions using the [[Saturn IB]] [[launch vehicle]]. It was also launched twelve times on the larger [[Saturn V]] rocket, designed to propel it with the Lunar Module to the Moon. The CSM made a total of nine manned flights to the Moon.
+
+After the Apollo lunar program, the CSM saw manned service as a crew shuttle for the [[Skylab]] program, and the [[Apollo-Soyuz Test Project]] (ASTP) in which an American crew [[Space rendezvous|rendezvoused]] and [[docking and berthing of spacecraft|docked]] with a [[Soviet Union|Soviet]] [[Soyuz spacecraft]] in Earth orbit.  Ending with ASTP in 1975, it had flown a total of six crewed missions to low Earth orbit.
+
+The Command/Service Module consisted of two segments: the conical '''Command Module''', a cabin that housed a crew of three and equipment needed for [[re-entry]] and [[splashdown (spacecraft landing)|splashdown]]; and the cylindrical '''Service Module''' which provided propulsion, electrical power and storage for various consumables required during a mission. The Service Module was cast off and allowed to burn up in the atmosphere before the Command Module re-entered and brought the crew home.
+
+The CSM was initially designed to return all three astronauts from the lunar surface on a [[direct ascent|direct-ascent]] mission which would not use a separate Lunar Module, and thus had no provisions for docking with another spacecraft. This, plus other required design changes, led to the decision to design two versions of the CSM: Block I was to be used for unmanned missions and a single manned Earth orbit flight ([[Apollo 1]]), while the more advanced Block II was designed for use with the Lunar Module. The Apollo 1 flight was cancelled after a cabin fire killed the entire crew and destroyed the Command Module during a launch rehearsal test. Corrections of the problems which caused the fire were applied to the Block II spacecraft, which was used for all manned missions.
+
+==Development history==
+When NASA awarded the initial Apollo contract to North American Aviation on November 28, 1961, it was still assumed the lunar landing would be achieved by direct descent rather than by lunar orbit rendezvous.<ref name='chariots2-5'>{{cite book|url=http://www.hq.nasa.gov/office/pao/History/SP-4205/contents.html|title=Chariots for Apollo: A History of Manned Lunar Spacecraft|author1=Courtney G Brooks |author2=James M. Grimwood |author3=Loyd S. Swenson |year=1979|accessdate=2008-01-29|publisher=NASA|chapter=Contracting for the Command Module|chapterurl = http://www.hq.nasa.gov/office/pao/History/SP-4205/ch2-5.html|isbn=0-486-46756-2| archiveurl= https://web.archive.org/web/20080209003722/http://www.hq.nasa.gov/office/pao/History/SP-4205/contents.html| archivedate= 9 February 2008 <!--DASHBot-->| deadurl= no}}</ref> Therefore, design proceeded without a means of docking the Command Module to a [[Apollo Lunar Module|Lunar Excursion Module (LEM)]]. But the change to lunar orbit rendezvous, plus several technical obstacles encountered in some subsystems (such as environmental control), soon made it clear that substantial redesign would be required. In 1963, NASA decided the most efficient way to keep the program on track was to proceed with the development in two versions:<ref name='chariots5-1'>{{cite book|url=http://www.hq.nasa.gov/office/pao/History/SP-4205/contents.html|title=Chariots for Apollo: A History of Manned Lunar Spacecraft|author1=Courtney G Brooks |author2=James M. Grimwood |author3=Loyd S. Swenson |year=1979|accessdate=2008-01-29|publisher=NASA|chapter=Command Modules and Program Changes|chapterurl = http://www.hq.nasa.gov/office/pao/History/SP-4205/ch5-1.html|isbn=0-486-46756-2| archiveurl= https://web.archive.org/web/20080209003722/http://www.hq.nasa.gov/office/pao/History/SP-4205/contents.html| archivedate= 9 February 2008 <!--DASHBot-->| deadurl= no}}</ref>
+* '''Block I''' would continue the preliminary design, to be used for early low Earth orbit test flights only.
+* '''Block II''' would be the lunar-capable version, including a docking hatch and incorporating weight reduction and lessons learned in Block I. Detailed design of the docking capability depended on design of the LEM, which was contracted to [[Grumman Aircraft Engineering]].
+
+By January 1964, North American started presenting Block II design details to NASA.<ref>
+{{cite book
+  | last1 = Morse 
+  | first1 = Mary Louise 
+  | last2 = Bays
+  | first2 = Jean Kernahan 
+  | authorlink = 
+  | coauthors = 
+  | title = The Apollo Spacecraft: A Chronology
+  | publisher = NASA
+  | series = SP-4009II 
+  | volume = Vol. II, Part 2(C): Developing Hardware Distinctions
+  | edition = 
+  | date = September 20, 2007
+  | location = 
+  | pages = 
+  | language = 
+  | url = http://www.hq.nasa.gov/office/pao/History/SP-4009/contents.htm#Volume_II
+  | doi = 
+  | id = 
+  | isbn =
+  | mr = 
+  | zbl = 
+  | jfm = }}</ref>
+Block I spacecraft were used for all unmanned Saturn 1B and Saturn V test flights. Initially two manned flights were planned, but this was reduced to one in late 1966. This mission, designated AS-204 but named [[Apollo 1]] by its flight crew, was planned for launch on February 21, 1967. But during a dress rehearsal for the launch on January 27, all three astronauts ([[Gus Grissom]], [[Ed White (astronaut)|Ed White]] and [[Roger B. Chaffee|Roger Chaffee]]), were killed in a cabin fire which revealed serious design, construction and maintenance shortcomings in Block I, many of which would have been carried over into Block II.
+
+After a thorough investigation by the Apollo 204 Review Board, it was decided to terminate the manned Block I phase and redefine Block II to incorporate the [[Apollo 1#Command Module redesign|review board's recommendations]]. Block II incorporated a revised CM heat shield design, which was tested on the unmanned Apollo 4 and Apollo 6 flights, so the first all-up Block II spacecraft flew on the first manned mission, [[Apollo 7]].
+
+The two blocks were essentially similar in overall dimensions, but several design improvements resulted in weight reduction in Block II. Also, the Block I Service Module propellant tanks were slightly larger than in Block II. The Apollo 1 spacecraft weighed approximately {{convert|45,000|lb|kg}}, while the Block II Apollo 7 weighed {{convert|36,400|lb|kg|abbr=on}}. (These two Earth orbital craft were lighter than the craft which later went to the Moon, as they carried propellant in only one set of tanks, and did not carry the high-gain S-band antenna.) In the specifications given below, unless otherwise noted, all weights given are for the Block II spacecraft.
+
+The total cost of the CSM for development and the units produced was $36.9B in 2016 dollars, adjusted from a nominal total of $3.7B<ref>{{Cite book|url=http://georgetyson.com/files/apollostatistics.pdf|title=Apollo by the Numbers|last=Orloff|first=Richard|publisher=National Aeronautics and Space Administration|year=1996|isbn=|location=|pages=22}}</ref> using the NASA New Start Inflation Indices.<ref>{{Cite web|url=http://www.nasa.gov/sites/default/files/files/2013_NNSI_FY14(1).xlsx|title=NASA New Start Inflation Indices|last=|first=|date=|website=|publisher=National Aeronautics and Space Administration|access-date=May 23, 2016}}</ref>
+
+==Command Module (CM)==<!-- This section is linked from [[Apollo 13]] -->
+The Command Module was a truncated cone ([[frustum]]) {{convert|10|ft|7|in|m}} tall with a diameter of {{convert|12|ft|10|in|m}} across the base. The forward compartment contained two [[Reaction control system|reaction control engines]], the docking tunnel, and the components of the Earth Landing System. The inner pressure vessel housed the crew accommodations, equipment bays, controls and displays, and many [[spacecraft]] systems. The last section, the aft compartment, contained 10 reaction control engines and their related [[propellant]] tanks, fresh water tanks, and the CSM umbilical cables.
+
+===Construction===
+[[File:commandmoduleinterior.JPG|right|thumb|upright|Apollo Command Module cabin arrangement]] 
+The Command Module (CM) consisted of two basic structures joined together: the inner structure (pressure shell) and the outer structure.
+
+The inner structure was an aluminum sandwich construction which consisted of a welded aluminum inner skin, adhesively bonded aluminum honeycomb core, and outer face sheet.  The thickness of the honeycomb varied from about {{convert|1.5|in|cm}} at the base, to about {{convert|0.25|in|cm}} at the forward access tunnel.  This inner structure was the pressurized crew compartment.
+
+The outer structure  was made of stainless steel brazed honeycomb brazed between steel alloy face sheets. It varied in thickness from 0.5 inch to 2.5 inches.  Part of the area between the inner and outer shells was filled with a layer of [[fiberglass]] insulation as additional heat protection.<ref name = "NASA CM">{{Cite web|url=https://www.hq.nasa.gov/alsj/CSM06_Command_Module_Overview_pp39-52.pdf|title=CSM06 Command Module Overview pp 39 - 52|last=|first=|date=|website=|publisher=National Aeronautics and Space Administration|access-date=November 1, 2016}}</ref>
+
+====Thermal Protection (Heat Shield)====
+An [[ablative heat shield]] on the outside of the CM protected the capsule from the heat of [[reentry]], which is sufficient to melt most metals. This heat shield was composed of phenolic epoxy resin, a type of reinforced plastic. During reentry, this material charred and melted away, absorbing and carrying away the intense heat in the process. The heat shield has several outer coverings: a pore seal, a moisture barrier (a white reflective coating), and a silver Mylar thermal coating that looks like aluminum foil.
+
+The heat shield varied in thickness from {{convert|2|in|cm}} in the aft portion (the base of the capsule, which faced forward during reentry) to {{convert|0.5|in|cm}} in the crew compartment and forward portions. Total weight of the shield was about {{convert|3000|lb|kg}}.<ref name = "NASA CM" />
+
+====Forward Compartment====
+The forward compartment was the area outside the inner pressure shell in the nose of the capsule, located around the forward docking tunnel and covered by the forward heat shield. The compartment was divided into four 90-degree segments which contained Earth Ianding equipment (all the parachutes, recovery antennas and beacon light, and sea recovery sling), two reaction control engines, and the forward heat shield release mechanism.  
+ 
+At about {{convert|25000|ft|m}} during reentry, the forward heat shield was jettisoned to expose the Earth landing equipment and permit deployment of the parachutes.<ref name = "NASA CM" />
+
+====Aft Compartment====
+The aft compartment was located around the periphery of the command module at its widest part, just forward of (above) the aft heat shield.  The compartment was divided into 24 bays containing 10 reaction control engines; the fuel, oxidizer, and helium tanks for the CM reaction control subsystem; water tanks; the crushable ribs of the impact attenuation system; and a number of instruments.  The CM-SM umbilical, the point where wiring and plumbing ran from one module to the other, was also in the aft compartment.  The panels of the heat shield covering the aft compartment were removable for maintenance of the equipment before flight.<ref name = "NASA CM" />
+
+===Earth Landing System===
+[[File:Apollo 15 splashdown.jpg|thumb|300px|Apollo 15 makes contact with the Pacific Ocean, 1971. (See also [[Splashdown]])]]
+The components of the ELS were housed around the forward docking tunnel. The forward compartment was separated from the central by a bulkhead and was divided into four 90-degree wedges. The ELS consisted of two [[drogue parachute]]s with [[mortar (weapon)|mortar]]s, three main [[parachute]]s, three pilot parachutes to deploy the mains, three inflation bags for uprighting the capsule if necessary, a sea recovery cable, a dye marker, and a swimmer umbilical.
+
+The Command Module's center of mass was offset a foot or so from the center of pressure (along the symmetry axis). This provided a rotational [[torque|moment]] during reentry, angling the capsule and providing some lift (a [[lift to drag ratio]] of about 0.368<ref>Hillje, Ernest R., [https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19690029435_1969029435.pdf "Entry Aerodynamics at Lunar Return Conditions Obtained from the Flight of Apollo 4 (AS-501),"] NASA TN D-5399, (1969).</ref>). The capsule was then steered by rotating the capsule using thrusters; when no steering was required, the capsule was spun slowly, and the lift effects cancelled out. This system greatly reduced the [[g-force|''g''-force]] experienced by the astronauts, permitted a reasonable amount of directional control and allowed the capsule's splashdown point to be targeted within a few miles.
+
+At {{convert|24000|ft|km}} the forward heat shield was jettisoned using four pressurized-gas compression springs. The drogue parachutes were then deployed, slowing the spacecraft to {{convert|125|mph|km/h|abbr=off}}. At {{convert|10700|ft|km}} the drogues were jettisoned and the pilot parachutes, which pulled out the mains, were deployed. These slowed the CM to {{convert|22|mph|km/h|abbr=off}} for splashdown. The portion of the capsule that first contacted the water surface contained four crushable ribs to further mitigate the force of impact. The Command Module could safely parachute to an ocean landing with only two parachutes deployed (as occurred on [[Apollo 15]]), the third parachute being a safety precaution.
+
+===Reaction Control System===
+The Command Module [[Reaction control system|attitude control system]] consisted of twelve {{convert|93|lbf|N|adj=on}} attitude control jets; ten were located in the aft compartment, and two pitch motors in the forward compartment. Four tanks stored {{convert|270|lb|kg}} of [[monomethylhydrazine]] fuel and [[N2O4|nitrogen tetroxide]] oxidizer. They were pressurized by {{convert|1.1|lb|kg}} of [[helium]] stored at {{convert|4150|psi|MPa}} in two tanks.{{citation needed|date=October 2013}}
+
+===Hatches===
+The forward docking hatch was mounted at the top of the docking tunnel. It was {{convert|30|in|cm}} in diameter and weighed {{convert|80|lb|kg}}. It was constructed from two machined rings that were weld-joined to a brazed honeycomb panel. The exterior side was covered with a {{convert|0.5|in|mm|adj=on}} of insulation and a layer of aluminum foil. It was latched in six places and operated by a pump handle. The hatch contained a valve in its center, used to equalize the pressure between the tunnel and the CM so the hatch could be removed.
+
+The Unified Crew Hatch (UCH) measured {{convert|29|in|cm}} high, {{convert|34|in|cm}} wide, and weighed {{convert|225|lb}}. It was operated by a pump handle, which drove a [[ratchet (device)|ratchet]] mechanism to open or close fifteen latches simultaneously.
+
+===Docking assembly===
+Apollo's mission required the LM to dock with the CSM on return from the Moon, and also in the [[transposition, docking, and extraction]] maneuver at the beginning of the translunar coast. The docking mechanism was a [[Spacecraft Docking and Berthing Mechanisms#Androgyny|non-androgynous]] system, consisting of a ''probe'' located in the nose of the CSM, which connected to the ''drogue'', a truncated cone located on the Lunar Module. The probe was extended like a [[jack (device)|scissor jack]] to capture the drogue on initial contact, known as ''[[docking and berthing of spacecraft|soft docking]]''. Then the probe was retracted to pull the vehicles together and establish a firm connection, known as "hard docking". The mechanism was specified by NASA to have the following functions:{{Citation needed|date=June 2011}}
+*Allow the two vehicles to connect, and attenuate excess movement and energy caused by docking
+*Align and center the two vehicles and pull them together for capture
+*Provide a rigid structural connection between both vehicles, and be capable of removal and re-installation by a single crewman
+*Provide a means of remote separation of both vehicles for the return to Earth, using [[pyrotechnic fastener]]s at the circumference of the CSM docking collar
+*Provide redundant power and logic circuits for all electrical and pyrotechnic components.
+
+====Coupling====
+The probe head located in the CSM was self-centering and gimbal-mounted to the probe piston. As the probe head engaged in the opening of the drogue socket, three spring-loaded latches depressed and engaged. These latches allowed a so-called 'soft dock' state and enabled the pitch and yaw movements in the two vehicles to subside. Excess movement in the vehicles during the 'hard dock' process could cause damage to the docking ring and put stress on the upper tunnel. A depressed locking trigger link at each latch allowed a spring-loaded spool to move forward, maintaining the toggle linkage in an over-center locked position. In the upper end of the Lunar Module tunnel, the drogue, which was constructed of 1-inch-thick aluminum honeycomb core, bonded front and back to aluminum face sheets, was the receiving end of the probe head capture latches.
+
+====Retraction====
+After the initial capture and stabilization of the vehicles, the probe was capable of exerting a closing force of {{convert|1,000|lbf|kN}} to draw the vehicles together. This force was generated by gas pressure acting on the center piston within the probe cylinder. Piston retraction compressed the probe and interface seals and actuated the 12 automatic ring latches which were located radially around the inner surface of the CSM docking ring. The latches were manually re-cocked in the docking tunnel by an astronaut after each hard docking event (lunar missions required two dockings).
+
+====Separation====
+An automatic extension latch attached to the probe cylinder body engaged and retained the probe center piston in the retracted position. Before vehicle separation in lunar orbit, manual cocking of the twelve ring latches was accomplished. The separating force from the internal pressure in the tunnel area was then transmitted from the ring latches to the probe and drogue.
+In undocking, the release of the capture latches was accomplished by electrically energizing tandem-mounted DC rotary solenoids located in the center piston. In a temperature degraded condition, a single motor release operation was done manually in the Lunar Module by depressing the locking spool through an open hole in the probe heads, while release from the CSM was done by rotating a release handle at the back of the probe to rotate the motor torque shaft manually.<ref>{{cite techreport |first=Kenneth |last=Bloom |title=The Apollo docking system |number=19720005743 |institution=[[Rockwell International|North American Rockwell Corporation]] |date=January 1, 1971}}</ref>
+When the Command and Lunar Modules separated for the last time just before re-entry, the probe and forward docking ring were pyrotechnically separated, leaving all docking equipment attached to the lunar module. In the event of an abort during launch from Earth, the same system would have explosively jettisoned the docking ring and probe from the CM as it separated from the boost protective cover.
+
+===Cabin interior arrangement===
+[[File:Apollo Command Module Main Control Panel.gif|right|thumb|Apollo Command Module main control panel]]The central pressure vessel of the command module was its sole habitable compartment. It had an interior volume of {{convert|210|ft3|m3}} and housed the main control panels, crew seats, guidance and navigation systems, food and equipment lockers, the waste management system, and the docking tunnel.
+
+Dominating the forward section of the cabin was the crescent-shaped main display panel measuring nearly {{convert|7|ft|m}} wide and {{convert|3|ft|m}} tall. It was arranged into three panels, each emphasizing the duties of each crew member. The mission commander’s panel (left side) included the [[velocity]], attitude, and [[altitude]] indicators, the primary flight controls, and the main FDAI (Flight Director Attitude Indicator).
+
+The CM pilot served as navigator, so his control panel (center) included the [[Apollo Guidance Computer|Guidance and Navigation computer]] controls, the caution and warning indicator panel, the event timer, the Service Propulsion System and RCS controls, and the environmental control system controls.
+
+The LM pilot served as systems engineer, so his control panel (right-hand side) included the [[fuel cell]] gauges and controls, the electrical and [[Battery (electricity)|battery]] controls, and the communications controls.
+
+Flanking the sides of the main panel were sets of smaller control panels. On the left side were a [[circuit breaker]] panel, audio controls, and the SCS power controls. On the right were additional circuit breakers and a redundant audio control panel, along with the environmental control switches. In total, the command module panels included 24 instruments, 566 switches, 40 event indicators, and 71 lights.
+
+The three crew couches were constructed from hollow [[steel]] tubing and covered in a heavy, fireproof cloth known as Armalon. The leg pans of the two outer couches could be folded in a variety of positions, while the hip pan of the center couch could be disconnected and laid on the aft bulkhead. One [[rotation]] and one [[Translation (physics)|translation]] hand controller was installed on the armrests of the left-hand couch. The translation controller was used by the crew member performing the transposition, docking, and extraction maneuver with the LM, usually the CM Pilot. The center and right-hand couches had duplicate rotational controllers. The couches were supported by eight shock-attenuating struts, designed to ease the impact of touchdown on water or, in case of an emergency landing, on solid ground.
+
+The contiguous cabin space was organized into six equipment bays:
+[[File:Commandmoduleguidance.JPG|thumb|Apollo command module G&N equipment]]
+* The '''lower equipment bay''', which housed the [[Apollo Guidance Computer|Guidance and Navigation computer]], [[sextant]], [[telescope]], and [[Inertial Measurement Unit]]; various communications beacons; medical stores; an audio center; the [[S-band]] power amplifier; etc. There was also an extra rotation hand controller mounted on the bay wall, so the CM Pilot/navigator could rotate the spacecraft as needed while standing and looking through the telescope to find stars to take navigational measurements with the sextant. This bay provided a significant amount of room for the astronauts to move around in, unlike the cramped conditions which existed in the previous [[Project Mercury|Mercury]] and [[Project Gemini|Gemini]] spacecraft.
+* The '''left-hand forward equipment bay''', which contained four food storage compartments, the cabin [[heat exchanger]], [[pressure suit]] connector, potable [[water]] supply, and G&N telescope [[eyepiece]]s.
+* The '''right-hand forward equipment bay''', which housed two [[survival kit]] containers, a data card kit, flight data books and files, and other mission documentation.
+* The '''left hand intermediate equipment bay''', housing the [[oxygen]] surge tank, water delivery system, food supplies, the cabin pressure relief valve controls, and the ECS package.
+* The '''right hand intermediate equipment bay''', which contained the bio instrument kits, waste management system, food and sanitary supplies, and a waste storage compartment.
+* The '''aft storage bay''', behind the crew couches. This housed the 70&nbsp;mm [[camera]] equipment, the astronaut’s garments, tool sets, storage bags, a [[fire extinguisher]], [[carbon dioxide|CO<sub>2</sub>]] absorbers, sleep restraint ropes, [[spacesuit]] maintenance kits, 16mm camera equipment, and the contingency lunar sample container.
+
+The CM had five windows. The two side windows measured {{convert|13|in|mm}} square next to the left and right-hand couches. Two forward-facing triangular rendezvous windows measured {{convert|8|by|13|in|mm|abbr=off}}, used to aid in [[Space rendezvous|rendezvous]] and docking with the LM. The circular hatch window was 10 5/8 in. diameter (27&nbsp;cm) and was directly over the center couch. Each window assembly consisted of three thick panes of glass. The inner two panes, which were made of [[aluminosilicate]], made up part of the module's pressure vessel. The fused silica outer pane served as both a debris shield and as part of the heat shield. Each pane had an anti-reflective coating and a blue-red reflective coating on the inner surface.
+
+===Specifications===
+{{Citation needed|date=August 2012}}
+[[File:Apollo 14 CM Saturn V Centre.JPG|thumb|Apollo 14 Command Module at Kennedy Space Center.]]
+* Crew: 3
+* Crew cabin volume: {{convert|218|ft3|m3|abbr=on}} living space, pressurized {{convert|366|ft3|m3|abbr=on}}
+* Length: {{convert|11.4|ft|m|abbr=on}}
+* Diameter: {{convert|12.8|ft|m|abbr=on}}
+* Mass: {{convert|12250|lb|kg|abbr=on}}
+** Structure mass: {{convert|3450|lb|kg|abbr=on}}
+** Heat shield mass: {{convert|1870|lb|kg|abbr=on}}
+** RCS engine mass: twelve x {{convert|73.3|lb|kg|abbr=on}}
+** Recovery equipment mass: {{convert|540|lb|kg|abbr=on}}
+** [[Navigation]] equipment mass: {{convert|1110|lb|kg|abbr=on}}
+** [[Telemetry]] equipment mass: {{convert|440|lb|kg|abbr=on}}
+** Electrical equipment mass: {{convert|1500|lb|kg|abbr=on}}
+** Communications systems mass: {{convert|220|lb|kg|abbr=on}}
+** Crew couches and provisions mass: {{convert|1200|lb|kg|abbr=on}}
+** Environmental Control System mass: {{convert|440|lb|kg|abbr=on}}
+** Misc. contingency mass: {{convert|440|lb|kg|abbr=on}}
+* RCS: twelve {{convert|93|lbf|N|abbr=on|adj=on}} thrusters, firing in pairs
+* RCS propellants: MMH/N<sub>2</sub>O<sub>4</sub>
+* RCS propellant mass: {{convert|270|lb|kg|abbr=on}}
+* Drinking water capacity: {{convert|33|lb|kg|abbr=on}}
+* Waste water capacity: {{convert|58|lb|kg|abbr=on}}
+* CO<sub>2</sub> scrubber: [[lithium hydroxide]]
+* Odor absorber: [[Activated carbon|activated charcoal]]
+* Electric system batteries: three 40 ampere-hour [[Silver-oxide battery|silver-zinc batteries]]; two 0.75 ampere-hour silver-zinc pyrotechnic batteries
+* Parachutes: two {{convert|16|ft|m}} conical ribbon drogue parachutes; three {{convert|7.2|ft|m}} ringshot pilot parachutes; three {{convert|83.5|ft|m}} ringsail main parachutes
+
+==Service Module (SM)==<!-- This section is linked from [[Project Apollo]] -->
+[[File:Servicemodule.JPG|thumb|Block II Service Module interior components]]
+
+===Construction===
+The Service Module was an unpressurized cylindrical structure, measuring {{convert|24|ft|7|in|m}} long and {{convert|12|ft|10|in|m}} in diameter.
+The interior was a simple structure consisting of a central tunnel section {{convert|44|in|m}} in diameter, surrounded by six pie-shaped sectors. The sectors were topped by a forward bulkhead and fairing, separated by six radial beams, covered on the outside by four honeycomb panels, and supported by an aft bulkhead and engine heat shield. The sectors were not all equal 60° angles, but varied according to required size.
+* Sector 1 (50°) was originally unused, so it was filled with [[Sailing ballast|ballast]] to maintain the SM's center-of gravity. On the last three lunar landing ([[Apollo program#Mission types|I-J class]]) missions, it carried the '''Scientific Instrument Module (SIM)''' which contained a package of lunar orbital sensors and a subsatellite.
+* Sector 2 (70°) contained the '''Service Propulsion System (SPS)''' oxidizer sump tank, so called because it directly fed the engine and was kept continuously filled by a separate storage tank, until the latter was empty. The sump tank was a cylinder with hemispherical ends, {{convert|153.8|in|m}} high, {{convert|51|in|m}} in diameter, and contained {{convert|13923|lb|kg}} of oxidizer.
+* Sector 3 (60°) contained the SPS oxidizer storage tank, which was the same shape as the sump tank but slightly smaller at {{convert|154.47|in|m}} high and {{convert|44|in|m}} in diameter, and held {{convert|11,284|lb|kg}} of oxidizer.
+* Sector 4 (50°) contained the '''Electrical Power System (EPS)''' fuel cells with their hydrogen and oxygen reactants.
+* Sector 5 (70°) contained the SPS fuel sump tank. This was the same size as the oxidizer sump tank and held {{convert|8708|lb|kg}} of fuel.
+* Sector 6 (60°) contained the SPS fuel storage tank, also the same size as the oxidizer storage tank. It held {{convert|7058|lb|kg}} of fuel.
+
+The forward fairing measured {{convert|2|ft|10|in|mm}} long and included the '''Reaction Control System (RCS)''' computer, umbilical connection, power distribution block, ECS controller, separation controller, components for the high-gain antenna, and eight EPS radiators. The umbilical housing contained the main electrical and plumbing connections to the CM. The fairing externally contained a retractable forward-facing [[Searchlight|spotlight]]; an EVA [[High-intensity discharge lamp|floodlight]] to aid the Command Module pilot in SIM film retrieval; and a flashing rendezvous [[beacon]] visible from {{convert|54|nmi|km}} away as a navigation aid for rendezvous with the Lunar Module (LM).
+
+The SM was connected to the CM using three tension ties and six compression pads. The tension ties were stainless steel straps bolted to the CM's aft heat shield. It remained attached to the Command Module throughout most of the mission, until being jettisoned just prior to re-entry into the Earth's atmosphere. At jettison, the CM umbillical connections were cut using a pyrotechnic-activated [[guillotine]] assembly. Following jettison, the SM aft translation thrusters automatically fired continuously to distance it from the CM, until either the RCS fuel or the fuel cell power was depleted. The roll thrusters were also fired for five seconds to make sure it followed a different trajectory from the CM and faster break-up on re-entry.
+
+===Service Propulsion System===
+The SPS engine was used to place the Apollo spacecraft into and out of lunar orbit, and for mid-course corrections between the Earth and Moon. It also served as a [[retrorocket]] to perform the deorbit burn for Earth orbital Apollo flights. The engine selected was the [[AJ-10|AJ10-137]],<ref>
+{{cite web | url = http://www.astronautix.com/craft/apolocsm.htm | title = Apollo CSM | publisher = Encyclopedia Astronautica | deadurl = yes | archiveurl = https://web.archive.org/web/20071217222825/http://www.astronautix.com/craft/apolocsm.htm | archivedate = 2007-12-17 | df =  }}</ref> which used [[Aerozine 50]] as fuel and [[nitrogen tetroxide]] (N<sub>2</sub>O<sub>4</sub>) as [[oxidizer]] to produce {{convert|20500|lbf|kN|adj=on|abbr=on}} of thrust. The thrust level was twice what was needed to accomplish the [[lunar orbit rendezvous]] (LOR) mission mode, because the engine was originally sized to lift the CSM off of the lunar surface in the [[direct ascent]] mode assumed in original planning<ref>
+{{Cite book
+| last = Wilford
+| first = John
+| authorlink = John Noble Wilford
+| title = We Reach the Moon: The New York Times Story of Man's Greatest Adventure
+| publisher = Bantam Paperbacks
+| location = New York
+| year = 1969
+| page = 167
+| id = {{Listed Invalid ISBN|0-373-06369-0}} }}
+</ref> (see [[Apollo Program#Choosing a mission mode|Choosing a mission mode]].) A contract was signed in April 1962 for the [[Aerojet|Aerojet-General]] company to start developing the engine, before the LOR mode was officially chosen in July of that year.<ref>
+{{cite web | url = http://www.astronautix.com/craft/csmsps.htm | title = Apollo CSM SPS | publisher = Encyclopedia Astronautica | deadurl = yes | archiveurl = https://web.archive.org/web/20100201083913/http://astronautix.com/craft/csmsps.htm | archivedate = 2010-02-01 | df =  }}</ref>
+
+The propellants were pressure-fed to the engine by {{convert|39.2|ft3|m3}} of gaseous helium at {{convert|3600|psi|MPa}}, carried in two {{convert|40|in|m|adj=on}} diameter spherical tanks.<ref>{{cite web| url = https://history.nasa.gov/afj/aoh/aoh-v1-2-04-sps.pdf | title = Apollo Operations Handbook, SM2A-03-Block II-(1) | at = Section 2.4 | publisher = NASA | archiveurl = https://web.archive.org/web/20130703014940/https://history.nasa.gov/afj/aohindex.htm | archivedate = 3 July 2013 | dead-url = no}}</ref>
+
+The exhaust nozzle engine bell measured {{convert|152.82|in|m}} long and {{convert|98.48|in|m}} wide at the base. It was mounted on two [[gimbal]]s to keep the thrust vector aligned with the spacecraft's [[center of mass]] during SPS firings. The combustion chamber and pressurant tanks were housed in the central tunnel.
+
+===Reaction Control System===
+Four clusters of four [[reaction control system]] (RCS) thrusters were installed around the upper section of the SM every 90°. The sixteen-thruster arrangement provided [[rotation]] and [[Translation (geometry)|translation]] control in all three spacecraft axes. Each [[R-4D]] thruster generated {{convert|100|lbf|N}} of thrust, and used [[monomethylhydrazine]] (MMH) as fuel and nitrogen tetroxide (NTO) as oxidizer. Each quad assembly measured {{convert|8|by|3|ft|m}} and had its own fuel tanks, oxidizer tanks, helium pressurant tank, and associated valves and regulators.
+
+Each cluster of thrusters had its own independent primary fuel (MMH) tank containing {{convert|69.1|lb|kg}}, secondary fuel tank containing {{convert|45.2|lb|kg}}, primary oxidizer tank containing {{convert|137.0|lb|kg}}, and secondary oxidizer tank containing {{convert|89.2|lb|kg}}.  The fuel and oxidizer tanks were pressurised by a single liquid helium tank containing {{convert|1.35|lb|kg}}.<ref>{{Cite book|url=https://history.nasa.gov/afj/aoh/aoh-v1-2-05-rcs.pdf|title=SM2A-03-BLOCK II-(1), Apollo Operations Handbook|last=|first=|publisher=National Aeronautics and Space Administration|year=1969|isbn=|location=|pages=22–23|accessdate=13 August 2017}}</ref>  Back flow was prevented by a series of check valves, and back flow and ullage requirements were resolved by containing the fuel and oxidizer in [[Teflon]] bladders which separated the propellants from the helium pressurant.<ref name="SM2A Block II">{{Cite book|url=https://history.nasa.gov/afj/aoh/aoh-v1-2-05-rcs.pdf|title=SM2A-03-BLOCK II-(1), Apollo Operations Handbook|last=|first=|publisher=National Aeronautics and Space Administration|year=1969|isbn=|location=|pages=8|accessdate=13 August 2017}}</ref>
+
+All of the elements were duplicated, resulting in four completely independent RCS clusters. Only two adjacent functioning units were needed to allow complete attitude control.<ref name="SM2A Block II" />
+
+The Lunar Module used a similar four-quad arrangement of the identical thruster engines for its RCS.
+
+===Electrical power system===
+[[File:Apollo SM fuel cell.jpg|thumb|upright|Three of these fuel cells were used to power the spacecraft on lunar flights.]]
+Electrical power was produced by three [[fuel cell]]s, each measuring {{convert|44|in|m}} tall by {{convert|22|in|m}} in diameter and weighing {{convert|245|lb|kg}}. These combined hydrogen and oxygen to generate electrical power, and produced drinkable water as a byproduct.  The cells were fed by two hemispherical-cylindrical {{convert|31.75|in|m|adj=on}} diameter tanks, each holding {{convert|29|lb|kg}} of [[liquid hydrogen]], and two spherical {{convert|26|in|m|adj=on}} diameter tanks, each holding {{convert|326|lb|kg}} of [[liquid oxygen]] (which also supplied the environmental control system).
+
+On the flight of [[Apollo 13]], the EPS was disabled by an explosive rupture of one oxygen tank, which punctured the second tank and led to the loss of all oxygen. After the accident, a third oxygen tank was added to prevent operation below 50% tank capacity which allowed removal of the tank's internal stirring fan equipment, which had contributed to the failure.
+
+Also starting with Apollo 14, a 400 Ah auxiliary battery was added to the SM for emergency use. Apollo 13 had drawn heavily on its entry batteries in the first hours after the explosion, and while this new battery could not power the CM for more than 5–10 hours it would buy time in the event of a temporary loss of all three fuel cells. Such an event occurred when Apollo 12 was struck twice by lightning during launch.
+
+===Environmental control system===
+Cabin atmosphere was maintained at {{convert|5|psi|kPa}} of pure oxygen from the same liquid oxygen tanks that fed the electrical power system's fuel cells. Potable water supplied by the fuel cells was stored for drinking and food preparation. A thermal control system using a mixture of water and [[ethylene glycol]] as [[coolant]] dumped waste heat from the CM cabin and electronics to outer space via two {{convert|30|ft2|m2|adj=on}} radiators located on the lower section of the exterior walls, one covering sectors 2 and 3 and the other covering sectors 5 and 6.<ref>{{cite web| url = https://history.nasa.gov/afj/aoh/aoh-v1-2-04-sps.pdf | title = Apollo Operations Handbook, SM2A-03-Block II-(1) | at = Section 2.7 | publisher = NASA | archiveurl = https://web.archive.org/web/20130703014940/https://history.nasa.gov/afj/aohindex.htm | archivedate = 3 July 2013 | dead-url = no}}</ref>
+
+===Communications system===
+Short-range communications between the CSM and Lunar Module employed two [[VHF]] [[scimitar antenna]]s mounted on the SM just above the ECS radiators.
+
+A steerable [[unified S-band]] [[directional antenna|high-gain antenna]] for long-range communications with Earth was mounted on the aft bulkhead. This was an array of four {{convert|31|in|m|adj=on}} diameter reflectors surrounding a single {{convert|11|in|m|adj=on}} square reflector. During launch it was folded down parallel to the main engine to fit inside the [[Apollo spacecraft#Spacecraft Lunar Module Adapter (SLA)|Spacecraft-to-LM Adapter (SLA)]]. After CSM separation from the SLA, it deployed at a right angle to the SM.
+
+Four omnidirectional S-band antennas on the CM were used when the attitude of the CSM kept the high-gain antenna from being pointed at Earth. These antennas were also used between SM jettison and landing.<ref>{{Cite web|url=https://www.hq.nasa.gov/alsj/CSM18_Telecommunications_Subsystem_pp173-188.pdf|title=Nasa CSM/LM communication.|last=|first=|date=|website=|publisher=|access-date=December 20, 2016}}</ref>
+
+===Specifications===
+* Length: {{convert|24.8|ft|m|abbr=on}}
+* Diameter: {{convert|12.8|ft|m|abbr=on}}
+* Mass: {{convert|54060|lb|kg|abbr=on}}
+** Structure mass: {{convert|4200|lb|kg|abbr=on}}
+** Electrical equipment mass: {{convert|2600|lb|kg|abbr=on}}
+** Service Propulsion (SPS) engine mass: {{convert|6600|lb|kg|abbr=on}}
+** SPS engine propellants: {{convert|40590|lb|kg|abbr=on}}
+* RCS thrust: two or four x {{convert|100|lbf|N|abbr=on}}
+* RCS Propellants: MMH/N<sub>2</sub>O<sub>4</sub>
+* SPS engine thrust: {{convert|20500|lbf|N|abbr=on}}
+* SPS engine propellants: (UDMH/N<sub>2</sub>H<sub>4</sub>)/N<sub>2</sub>O<sub>4</sub>
+* SPS ''I''<sub>SP</sub>: 314 s (3,100 N·s/kg)
+* Spacecraft delta v: {{convert|9200|ft/s|m/s|abbr=on}}
+* Electrical System: three 1.4&nbsp;kW 30 V DC fuel cells
+
+==Modifications for Saturn IB missions==
+[[File:Skylab 4 - command service module.jpg|thumb|Apollo CSM in white for a Skylab mission, docked to the Skylab space station]]
+The payload capability of the [[Saturn IB]] launch vehicle used to launch the Low Earth Orbit missions ([[Apollo 1]] (planned), [[Apollo 7]], [[Skylab 2]], [[Skylab 3]], [[Skylab 4]], and [[Apollo-Soyuz Test Project|Apollo-Soyuz]]) could not handle the {{convert|66900|lb|kg|adj=on}} mass of the fully fueled CSM. This was not a problem, because the spacecraft [[delta-v]] requirement of these missions was much smaller than that of the lunar mission; therefore they could be launched with less than half of the full SPS propellant load, by filling only the SPS sump tanks and leaving the storage tanks empty. The CSMs launched in orbit on Saturn IB ranged from {{convert|32558|lb|kg}} (Apollo-Soyuz), to {{convert|46000|lb|kg}} (Skylab 4).
+
+The omnidirectional antennas sufficed for ground communications during the Earth orbital missions, so the high-gain S-band antenna on the SM was omitted from Apollo 1, Apollo 7, and the three Skylab flights. It was restored for the Apollo-Soyuz mission to communicate through the [[ATS-6]] satellite in geostationary orbit, an experimental precursor to the current [[TDRSS]] system.
+
+On the Skylab and Apollo-Soyuz missions, some additional dry weight was saved by removing the otherwise empty fuel and oxidizer storage tanks (leaving the partially filled sump tanks), along with one of the two helium pressurant tanks.<ref>{{cite web
+ |url=http://www.astronautix.com/details/red17167.htm 
+ |title=Reduced Apollo Block II service propulsion system for Saturn IB Missions 
+ |publisher=Encyclopedia Astronautica 
+ |deadurl=yes 
+ |archiveurl=https://web.archive.org/web/20100201055835/http://astronautix.com/details/red17167.htm 
+ |archivedate=2010-02-01 
+ |df= 
+}}
+</ref>
+This permitted the addition of some extra RCS propellant to allow for use as a backup for the deorbit burn in case of possible SPS failure.<ref>
+{{cite book
+| last = Gatland
+| first = Kenneth
+| title = Manned Spacecraft, Second Revision
+| publisher = Macmillan Publishing Co.
+| location = New York
+| year = 1976
+| page = 292
+| isbn = 0-02-542820-9 }}
+</ref>
+
+Since the spacecraft for the Skylab missions would not be occupied for most of the mission, there was lower demand on the power system, so one of the three fuel cells was deleted from these SMs.
+
+The Command Module could be modified to carry extra astronauts as passengers by adding [[jump seat]] couches in the aft equipment bay. CM-119 was fitted with two jump seats as a [[Skylab Rescue]] vehicle, which was never used.<ref name="missionreq">" [https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19740004370_1974004370.pdf Mission Requirements, Skylab Rescue Mission, SL-R]" NASA, 24 August 1973.</ref>
+
+==Major differences between Block I and Block II==
+
+===Command Module===
+[[File:Apollo Block1 CM.PNG|thumb|Block I Command Module exterior]]
+* The Block II used a one-piece, quick-release, outward opening hatch instead of the two-piece [[Plug door|plug]] hatch used on Block I, in which the inner piece had to be unbolted and placed inside the cabin in order to enter or exit the spacecraft (a flaw that doomed the Apollo 1 crew). The Block II hatch could be opened quickly in case of an emergency. (Both hatch versions were covered with an extra, removable section of the Boost Protective Cover which surrounded the CM to protect it in case of a launch abort.)
+* The Block I forward access tunnel was smaller than Block II, and intended only for emergency crew egress after splashdown in case of problems with the main hatch. It was covered with a removable plug in the nose of the forward heat shield. Block II contained a shorter forward heat shield with a flat removable hatch, beneath a docking ring and probe mechanism which captured and held the LM.
+* The aluminized PET film layer, which gave the Block II heat shield a shiny mirrored appearance, was absent on Block I, exposing the light gray epoxy resin material, which on some flights was painted white.
+* The Block I VHF [[scimitar antenna]]s were located in two semicircular [[Strake (aviation)|strakes]] originally thought necessary to help stabilize the CM during reentry. However, the unmanned reentry tests proved these to be unnecessary for stability, and also aerodynamically ineffective at high simulated lunar reentry speeds. Therefore, the strakes were removed from Block II and the antennas were moved to the Service Module.
+* The Block I CM/SM umbillical connector was smaller than on Block II, located near the crew hatch instead of nearly 180 degrees away from it. The separation point was between the modules, instead of the larger hinged arm mounted on the Service Module, separating at the CM sidewall on Block II.
+* The two negative pitch RCS engines located in the forward compartment were arranged vertically on Block I, and horizontally on Block II.
+
+===Service Module===
+[[File:Apollo Block1 SM.PNG|thumb|Block I Service Module interior components]]
+* On the Apollo 6 unmanned Block I flights, the SM was painted white to match the Command Module's appearance, but on Apollo 1, Apollo 4, and all the Block II spacecraft, the SM walls were left unpainted except for the EPS and ECS radiators, which were white.
+* The EPS and ECS radiators were redesigned for Block II. Block I had three larger EPS radiators located on Sectors 1 and 4. The ECS radiators were located on the aft section of Sectors 2 and 5.
+* The Block I fuel cells were located at the aft bulkhead in Sector 4, and their hydrogen and oxygen tanks were located in Sector 1.
+* Block I had slightly longer SPS fuel and oxidizer tanks which carried more propellant than Block II.
+* The Block II aft heat shield was a rectangular shape with slightly rounded corners at the propellant tank sectors. The Block I shield was the same basic shape, but bulged out slightly near the ends more like an hourglass or figure eight, to cover more of the tanks.
+
+==CSMs produced==
+{{Refimprove section|date=August 2011}}
+{| class="wikitable"
+! Serial number
+! Name
+! Use
+! Launch date
+! Current location
+|-
+! colspan="5" | Block I
+|-
+| CSM-001
+|
+| colspan="2" | systems compatibility test vehicle
+|
+|-
+| CSM-002
+|
+| [[A-004]] flight
+| January 20, 1966
+| Command Module on display at [[Cradle of Aviation]], [[Long Island]], [[New York (state)|New York]]
+|-
+| CSM-004
+|
+| colspan="2" | static and thermal structural ground tests
+| scrapped
+|-
+| CSM-006
+|
+| colspan="2" | used for demonstrating tumbling debris removal system
+| scrapped
+|-
+| CSM-007
+|
+| colspan="2" | various tests including acoustic vibration and drop tests, and water egress training. CM was refitted with Block II improvements.<ref>These included the crew couches, quick escape hatch, and metallic heat shield coating. See [[:File:ApolloCommandModule1.jpg|Apollo Command Module]] ''(image @ [[Wikimedia Commons]])''.</ref> Underwent testing for [[Skylab]] at the McKinley Climatic Laboratory, [[Eglin AFB]], Florida, 1971-1973.
+| Command Module on display at [[Museum of Flight]], [[Seattle]], [[Washington (state)|Washington]]
+|-
+| CSM-008
+|
+| colspan="2" | complete systems spacecraft used in [[List_of_Apollo_missions#Thermal-vacuum_tests|thermal vacuum tests]]
+| scrapped
+|-
+| CSM-009
+|
+| [[AS-201]] flight and drop tests
+| February 26, 1966
+| Command Module on display at [[Strategic Air and Space Museum]], adjacent to [[Offutt Air Force Base]] in [[Ashland, Nebraska]]
+|-
+| CSM-010
+|
+|
+|
+| Command Module on display at [[U.S. Space & Rocket Center]], [[Huntsville, Alabama]]
+|-
+| CSM-011
+|
+| [[AS-202]] flight
+| August 25, 1966
+| Command Module on display on the [[USS Hornet (CV-12)|USS ''Hornet'']] museum at the former [[Naval Air Station Alameda]], [[Alameda, California]]
+|-
+| CSM-012
+|
+| colspan="2" | [[Apollo 1]]; the Command Module was severely damaged in the Apollo 1 fire
+| Command Module in storage at the [[Langley Research Center]], [[Hampton, Virginia]]; three-part door hatch on display at [[Kennedy Space Center]]
+|-
+| CSM-014
+|
+| Command Module disassembled as part of Apollo 1 investigation. Service Module (SM-014) used on [[Apollo 6]] mission
+| April 4, 1968
+|
+|-
+| CSM-017
+|
+| [[Apollo 4]]
+| November 9, 1967
+| Command Module on display at [[Stennis Space Center]], [[Bay St. Louis, Mississippi]]
+|-
+| CSM-020
+|
+| CM-020 flew on [[Apollo 6]] with SM-014 after SM-020 was destroyed in an explosion
+| April 4, 1968
+| Command Module on display at [[Fernbank Science Center]], [[Atlanta]]
+|-
+! colspan="5" | Block II<ref>{{cite web | url = https://history.nasa.gov/alsj/alsj-CSMdocs.html | title = Apollo Command and Service Module Documentation |
+publisher = NASA}}</ref>
+|-
+| CSM-098
+| 2TV-1 (Block II Thermal Vacuum no.1)
+| colspan="2" | used in [[List_of_Apollo_missions#Thermal-vacuum_tests|thermal vacuum tests]]
+| CSM on display at [[Academy of Science Museum]], [[Moscow, Russia]] as part of the [[Apollo Soyuz Test Project]] display.
+|-
+| CSM-099
+|
+| colspan="2" | static structural testing
+| scrapped
+|-
+| CSM-100
+|
+| colspan="2" | static structural testing
+| unknown
+|-
+| CSM-101
+|
+| [[Apollo 7]]
+| October 11, 1968
+| Command Module was on display at [[Canada Science and Technology Museum|National Museum of Science and Technology]], [[Ottawa, Canada]] from 1974 until 2004, now at the [[Frontiers of Flight Museum]], [[Dallas]], [[Texas]] after 30 years of being on loan.<ref>{{Cite web |url=http://www.sciencetech.technomuses.ca/english/newsrel/apollo04.cfm |title=Apollo 7 Command Module and Wally Schirra’s Training Suit Leave Science and Tech Museum After 30 Years |date=March 12, 2004 |publisher=Canada Science and Technology Museum}}</ref>
+|-
+| CSM-102
+|
+| colspan="2" | [[Launch Complex 34]] checkout vehicle
+| Service Module is at JSC on top of the Little Joe II in Rocket Park. The command module is Boiler Plate 22.
+|-
+| CSM-103
+|
+| [[Apollo 8]]
+| December 21, 1968
+| Command Module on display at the [[Museum of Science and Industry (Chicago)|Museum of Science and Industry]] in [[Chicago]]
+|-
+| CSM-104
+|''Gumdrop''
+| [[Apollo 9]]
+| March 3, 1969
+| Command Module on display at [[San Diego]] [[San Diego Aerospace Museum|Air and Space Museum]]
+|-
+| CSM-105
+|
+| colspan="2" | acoustic tests
+| Command Module on display at [[National Air and Space Museum]], [[Washington, D.C.]] as part of the [[Apollo Soyuz Test Project]] display. ([[:File:Soyuz replica at smithsonian - from-DC1.jpg|Photo]])
+|-
+| CSM-106
+|''Charlie Brown''
+| [[Apollo 10]]
+| May 18, 1969
+| Command Module on display at [[Science Museum (London)|Science Museum]], [[London]]
+|-
+| CSM-107
+|''Columbia''
+| [[Apollo 11]]
+| July 16, 1969
+| Command Module on display at [[National Air and Space Museum]], [[Washington, D.C.]]
+|-
+| CSM-108
+|''Yankee Clipper''
+| [[Apollo 12]]
+| November 14, 1969
+| Command Module on display at [[Virginia Air & Space Center]], [[Hampton, Virginia]]; previously on display at the [[National Naval Aviation Museum]] at [[Naval Air Station Pensacola]], [[Pensacola, Florida]] (exchanged for CSM-116)
+|-
+| CSM-109
+|''Odyssey''
+| [[Apollo 13]]
+| April 11, 1970
+| Command Module on display at [[Kansas Cosmosphere and Space Center]]
+|-
+| CSM-110
+|''Kitty Hawk''
+| [[Apollo 14]]
+| January 31, 1971
+| Command Module on display at the [[Kennedy Space Center]]
+|-
+| CSM-111
+|
+| [[Apollo Soyuz Test Project]]
+| July 15, 1975
+| Command Module currently on display at [[California Science Center]] in [[Los Angeles]], [[California]]<ref>{{cite web|last1=Pearlman|first1=Robert|title=Historic Apollo-Soyuz Spacecraft Gets New Display at CA Science Center|url=https://www.space.com/39793-apollo-soyuz-spacecraft-gets-new-display.html|website=Space.com|accessdate=20 March 2018}}</ref><ref>{{cite web|title=Apollo-Soyuz Command Module|url=https://californiasciencecenter.org/exhibits/air-space/humans-in-space/apollo-soyuz-command-module|website=californiasciencecenter.org|accessdate=20 March 2018}}</ref><ref>{{cite web|last1=Pearlman|first1=Robert|title=Apollo-Soyuz spacecraft gets new display at CA Science Center|url=http://www.collectspace.com/news/news-022218a-apollo-soyuz-spacecraft-display.html|website=collectSPACE|accessdate=20 March 2018}}</ref> (formerly displayed at the [[Kennedy Space Center Visitor Complex]])
+|-
+| CSM-112
+|''Endeavour''
+| [[Apollo 15]]
+| July 26, 1971
+| Command Module on display at [[National Museum of the United States Air Force]], [[Wright-Patterson Air Force Base]], [[Dayton, Ohio]]
+|-
+| CSM-113
+|''Casper''
+| [[Apollo 16]]
+| April 16, 1972
+| Command Module on display at [[U.S. Space & Rocket Center]], [[Huntsville, Alabama]]
+|-
+| CSM-114
+|''America''
+| [[Apollo 17]]
+| December 7, 1972
+| Command Module on display at [[Space Center Houston]], [[Houston, Texas]]
+|-
+| CSM-115
+|
+| colspan="2" | canceled
+| Never fully completed – service module does not have its SPS nozzle installed. On display as part of the Saturn V display at [[Johnson Space Center]], [[Houston, Texas]]; command module restored in 2005 prior to the dedication of the JSC Saturn V Center
+|-
+| CSM-115a
+|
+| colspan="2" | canceled
+| never completed
+|-
+| CSM-116
+|
+| [[Skylab 2]]
+| May 25, 1973
+| Command Module on display at [[National Museum of Naval Aviation]], [[Naval Air Station Pensacola]], [[Pensacola, Florida]]
+|-
+| CSM-117
+|
+| [[Skylab 3]]
+| July 28, 1973
+| Command Module on display at [[Great Lakes Science Center]], current location of the NASA [[Glenn Research Center]] Visitor Center, [[Cleveland, Ohio]]
+|-
+| CSM-118
+|
+| [[Skylab 4]]
+| November 16, 1973
+| Command Module on display at [[National Air and Space Museum]], [[Washington, D.C.]]
+|-
+| CSM-119
+|
+| colspan="2" | [[Skylab Rescue]] and ASTP backup
+| On display at the [[Kennedy Space Center]]
+|}
+[[File:Apollo Spacecraft Locations World Map.png|thumb|740px|center|World map showing locations of Apollo Command and Service Modules (along with other hardware).]]
+{{clear}}
+
+==See also==
+*[[Orbital module]]
+*[[Reentry capsule]]
+*[[Space capsule]]
+*[[Space suit]]
+*[[Space exploration]]
+*[[U.S. Space Exploration History on U.S. Stamps]]
+
+==References==
+{{Reflist|colwidth=35em}}
+
+==External links==
+{{commons category|Apollo Command and Service Module}}
+* [https://www.youtube.com/watch?v=aW5ozq4Tqew Apollo Atmospheric Entry Phase], 1968, NASA Mission Planning and Analysis Division, Project Apollo. video (25:14).
+
+{{Apollo program}}
+{{Apollo program hardware}}
+{{Crewed spacecraft}}
+{{Manned lunar spacecraft}}
+{{NASA space program}}
+
+{{Use American English|date=January 2014}}
+
+{{DEFAULTSORT:Apollo Command Service Module}}
+[[Category:Crewed spacecraft]]
+[[Category:Missions to the Moon]]
+[[Category:Apollo program hardware]]

@@ -1,0 +1,33 @@
+{{Refimprove|date=July 2015}}
+[[image:Les tours sainte parisse et le chateau Chancenay 00417.jpg|thumb|19th century]]
+The '''Château de Chacenay''' is a [[castle]] situated in the ''[[Communes of France|commune]]'' of [[Chacenay]], in the [[Aube]] ''[[Departments of France|département]]'' of France.<ref name=MinCult>Ministry of Culture: [http://www.culture.gouv.fr/public/mistral/merimee_fr?ACTION=RETROUVER&REQ=((PA00078069):REF) Château] {{fr icon}}</ref>
+
+==History==
+Recorded since 1075, it was the [[fief]] of numerous great families over the years. Construction of the castle began in the 13th century.<ref name=MinCult/> The armoury room contains stone gargoyles that were carved by the same architect who carved the famous gargoyles of Notre Dame.{{cn|date=July 2014}}
+
+Sited at the heart of a forest, in the [[Middle Ages]] it formed an impregnable fortress thanks to its ramparts, [[keep]] (now destroyed), ditches, drawbridge and towers. It was the meeting grounds for one of many of the crusades that happened throughout Europe.{{cn|date=July 2014}}  
+
+Damaged following the orders of [[Louis XI of France|Louis XI]], it was over time reconstructed, and destroyed by fire during the [[French Revolution]].
+
+Since 1988, the castle has been owned by Panos and Lina Pervanas. It has been listed since 1990 as a ''[[monument historique]]'' by the [[French Ministry of Culture]], having been added to the inventory in 1926.<ref name=MinCult/> It is open to the public during the summer.{{cn|date=July 2014}}
+
+==See also==
+*[[List of castles in France]]
+
+== References ==
+{{reflist}}
+
+== Bibliography ==
+* {{cite web |author=Abbé Charles Lalore |url=http://gallica.bnf.fr/ark:/12148/bpt6k57547155 |title=Les sires et les barons de Chacenay|website=gallica BNF |date=1885 |accessdate= 5 May 2016|language=fr}}
+
+==External links==
+* [http://www.culture.gouv.fr/public/mistral/merimee_fr?ACTION=RETROUVER&REQ=((PA00078069):REF) Ministry of Culture listing for Château de Chacenay]
+
+{{France-castle-stub}}
+{{Coord|48|6|47|N|4|31|45|E|region:FR_type:landmark|display=title}}
+
+
+{{DEFAULTSORT:Chacenay, Chateau de}}
+[[Category:Castles in Grand Est]]
+[[Category:Monuments historiques of Grand Est]]
+[[Category:Châteaux in Aube]]
