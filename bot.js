@@ -6,10 +6,10 @@ var T = new Twit(require('./config.js'));
 
 // MediaWiki library
 const Mw = require('nodemw'),
-	client = new Mw({
-		server: 'en.wikipedia.org',
-		path: '/w'
-	});
+    client = new Mw({
+        server: 'en.wikipedia.org',
+        path: '/w'
+    });
 
 function getRandomUnsourcedPage(callback) {
     // Note that 'All_articles_with_unsourced_statements' category never gets a callback in a reasonable amount of time, so we have to do it using this category.
@@ -18,7 +18,7 @@ function getRandomUnsourcedPage(callback) {
             console.log(get_subcats_error);
         } else {
             subcats = subcats.filter(el => el.title.startsWith('Category:Articles'));
-   		    var selected_subcat = subcats[Math.floor(Math.random() * subcats.length)];
+            var selected_subcat = subcats[Math.floor(Math.random() * subcats.length)];
     
             // Get pages from this subcat
             client.getPagesInCategory(selected_subcat.title.replace('Category:', ''), function (get_pages_error, pages) {
@@ -36,24 +36,27 @@ function getRandomUnsourcedPage(callback) {
 function sanitize(content) {
     // Replace strings in content to avoid common areas we don't want to quote from.
 
-    // Super-destructive multi-line replacements. With m option in combination with [\s\S] you pretty much gobble everything.
-    // These come first because we don't want anything in them.
-    content = content.replace(/^{{infobox[\s\S]+?^}}/gim, '');                  // infobox
-    content = content.replace(/^{\|[\s\S]+?^\|}/gim, '');                       // wikitable
-    // Also just get rid of anything from refererences til the end of the article.
     // There can be citation neededs here, but honestly i cba.
     content = content.replace(/=+\s*References\s*=+[\s\S]*/gim, '');
 
-    // Slightly less destructive
+    // Don't want anything inside these tags.
+    content = content.replace(/^{{infobox[\s\S]+?^}}/gim, '');                  // infobox
+    content = content.replace(/^{\|[\s\S]+?^\|}/gim, '');                       // wikitable
+    content = content.replace(/\[{2}(file|image):.*\]{2}/gi, '');               // [[File:blah|deblah]]
+    content = content.replace(/\{{2}redirect\|.*\}{2}/gi, '');                   // {{Redirect|x}}
+    content = content.replace(/={2}.*={2}/g, '');                               // ==Section Headings==
     content = content.replace(/<!--.+?-->/g, '');                               // <!--this weird note tag-->
-    content = content.replace(/(<ref.*?>)((.*?)(<\/ref>))?/gi, '');              // <ref>reference</ref> and also <ref name= />
-    // Next are the ones where we want to preserve some text in match groups.
+    content = content.replace(/(<ref.*?>)((.*?)(<\/ref>))?/gi, '');             // <ref>reference</ref> and also <ref name= />
+    content = content.replace(/\{{2}cite[\s\S]+?\}{2}\s?<\/ref>/gim, '');       // {{cite book.... }}</ref> this weird pattern
+
+    // For these, some of the groups are preserved.
     content = content.replace(/\[\[([^\]\|]+?)\|(.+?)\]\]/g, '$2');             // [[bad format|good format]]
     content = content.replace(/{{convert\|(.+?)\|(.+?)\|.+?}}/gi, '$1$2');      // convert units (have to use original units)
 
     // Remove some patterns that would look funny if they appeared in the final tweet.
-    content = content.replace(/''+?/g, '');                                     // multiple single quotes
-    content = content.replace(/[\[\]]/g , '');                                  // [] braces
+    content = content.replace(/'{2,}/g, '');                                    // multiple single quotes
+    content = content.replace(/[\[\]]/g, '');                                   // [] braces
+    content = content.replace(/<\/?su(b|p)>/g, '');                             // subscript, superscript
 
     return content;
 }
@@ -71,8 +74,6 @@ function checkTweetLength(string) {
 }
 
 function formatSentence(sentence) {
-    // There could still be some markup left at this point, so let's remove it.
-    sentence = sentence.replace(/{{[\s\S]+?}}/, '');
     return sentence;
 }
 
@@ -81,7 +82,7 @@ function parseUnsourcedSentences(content) {
     var pattern_cn = /{{[Cc]([Nn]|itation [Nn]eeded)(\|[=\w\s\d]+)?}}/;
 
     // Sentence ending in a period followed by. {{cn}}
-    var pattern_period_before_cn = /([A-Z][^\.\n]+?\.)\s*/;
+    var pattern_period_before_cn = /([A-Z][^\}\.\n]+?\.)\s*/;
     var re_one = new RegExp(pattern_period_before_cn.source +          // full sentence including period
             pattern_cn.source,                                         // citation needed group
             'g');
@@ -111,6 +112,7 @@ function parseUnsourcedSentences(content) {
 
     return sentences;
 }
+module.exports.parseUnsourcedSentences = parseUnsourcedSentences;
 
 function tweetASentence() {
     // (1) Get an appropriate page.
@@ -136,7 +138,7 @@ function tweetASentence() {
                     var time_now = new Date();
                     console.log(time_now.toTimeString() + ' ' + tweet_text);
                     // (6) Tweet the sentence.
-	                T.post('statuses/update', { status: tweet_text }, function (tweet_error, data) {
+                    T.post('statuses/update', { status: tweet_text }, function (tweet_error, data) {
                         if (tweet_error) console.log(tweet_error);
                     });
                 }
