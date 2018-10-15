@@ -146,9 +146,12 @@ function tweetASentence() {
 
 }
 
-// Try to tweet something as soon as we run the program...
-tweetASentence();
-// ...and then every hour after that. Time here is in milliseconds, so
-// 1000 ms = 1 second, 1 sec * 60 = 1 min, 1 min * 60 = 1 hour --> 1000 * 60 * 60
-setInterval(tweetASentence, 1000 * 60 * 50);
+// Guard against running the bot when doing an 'npm test'.
+if (!module.parent) {
+    // Try to tweet something as soon as we run the program...
+    tweetASentence();
+    // ...and then every hour after that. Time here is in milliseconds, so
+    //1000 ms = 1 second, 1 sec * 60 = 1 min, 1 min * 60 = 1 hour --> 1000 * 60 * 60
+    setInterval(tweetASentence, 1000 * 60 * 50);
+}
 
