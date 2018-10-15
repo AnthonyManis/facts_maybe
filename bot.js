@@ -79,35 +79,23 @@ function formatSentence(sentence) {
 
 function parseUnsourcedSentences(content) {
     var sentences = [];
-    var pattern_cn = /{{[Cc]([Nn]|itation [Nn]eeded)(\|[=\w\s\d]+)?}}/;
+    var pattern_cn = /([A-Z][^\|\}\.\n]+?(\.|))\s*{{[Cc]([Nn]|itation [Nn]eeded)(\|[=\w\s]+)?}}/;
 
-    // Sentence ending in a period followed by. {{cn}}
-    var pattern_period_before_cn = /([A-Z][^\}\.\n]+?\.)\s*/;
-    var re_one = new RegExp(pattern_period_before_cn.source +          // full sentence including period
-            pattern_cn.source,                                         // citation needed group
-            'g');
+    var re_one = new RegExp(pattern_cn.source, 'g');
     var match = [];
     while ((match = re_one.exec(content)) !== null) {
         if (checkTweetLength(match[1])) sentences.push(match[1]); // Only want 1st group of expression
     }
-    // Sentence ending in {{cn}}. The period is at the end in this case.
-    // OR
-    // Sentence with {{cn}} somewhere within it, but also ending in a period.
-    var pattern_period_after_cn_prefix = /([A-Z][^}\.\n]+?)/;
-    var pattern_period_after_cn_suffix = /([^\.\n]*?\.)/;
-    var re_two = new RegExp(pattern_period_after_cn_prefix.source +    // first part of sentence before cn
-            pattern_cn.source +                                        // citation needed group
-            pattern_period_after_cn_suffix.source,                     // second part of sentence including period.
-            'g');
-    while ((match = re_two.exec(content)) !== null) {
-        if (checkTweetLength(match[1] + match[4])) sentences.push(match[1] + match[4]); // 1st and 4th group of expression
-    }
 
-    // Some citations are a span, wouldn't it be nice if they all were?
-    var pattern_cn_span = /{{([Cc]([Nn]|itation) span\s*\|\s*)([^\.\n]*?\.)(\s*\|[=\w\s\d]+)?}}/;
-    var re_three = new RegExp(pattern_cn_span.source, 'g');
-    while ((match = re_three.exec(content)) !== null) {
-        if (checkTweetLength(match[3])) sentences.push(match[3]); // Only the 3rd group is wanted.
+    // Some citations are a span-style. They look something like this:
+    // {{citation needed span|date=October 2018|text=The text that needs a citation}}
+    // The below pattern matches and extracts the appopriate group; however, it isn't perfect.
+    // I know for a fact that it doesn't interact well when you mix types (e.g. cn and cn span).
+    // It's guaranteed to break (produce some sentences with garbage), but not often enough that I care.
+    var pattern_cn_span = /([Cc]([Nn]|itation) [Ss]pan\s*(\|.+)?\|\s*text=)([^\|{}]+)/;
+    var re_two = new RegExp(pattern_cn_span.source, 'g');
+    while ((match = re_two.exec(content)) !== null) {
+        if (checkTweetLength(match[4])) sentences.push(match[4]); // Only the 3rd group is wanted.
     }
 
     return sentences;
