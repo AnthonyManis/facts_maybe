@@ -1,4 +1,3 @@
-
 {{Infobox spacecraft class
 | name                 = Apollo Command/Service Module
 | image                = Apollo CSM lunar orbit.jpg

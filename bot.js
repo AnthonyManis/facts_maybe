@@ -57,6 +57,7 @@ function sanitize(content) {
 
     return content;
 }
+module.exports.sanitize = sanitize;
 
 function formatURL(page_id) {
     var prefix = 'https://en.wikipedia.org/?curid=';
