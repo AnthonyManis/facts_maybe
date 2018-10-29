@@ -57,6 +57,7 @@ function sanitize(content) {
     content = content.replace(/'{2,}/g, '');                                    // multiple single quotes
     content = content.replace(/[\[\]]/g, '');                                   // [] braces
     content = content.replace(/<\/?su(b|p)>/g, '');                             // subscript, superscript
+    content = content.replace(/&\w+;/g, '');                                    // &nbsp; &ndash; etc etc
 
     return content;
 }
